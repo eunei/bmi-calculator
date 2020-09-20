@@ -1,0 +1,112 @@
+/*
+blue: #223649
+rose: #F47D73
+orange: #DF7A53
+grey: #B3B6C2
+cream: #F1F7F3
+*/
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  }
+
+html {
+font-size: 62.5%; 
+}
+
+
+body {
+  background-color: #223649;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+}
+
+header {
+  color: #DF7A53;
+  font-size: 5em;
+  font-family: 'Squada One', cursive;
+  letter-spacing: 1.7px;
+  text-align: center;
+  margin-top: 2em;
+  text-shadow: 2px 2px black;
+}
+
+footer {
+  clear: both;
+  position: relative;
+  color: #DF7A53;
+  font-size: 2em;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.formSection {
+padding: 8rem;
+}
+
+.formContainer {
+  margin: auto;
+  padding-top:1.5rem; 
+  height: 43rem;
+  width: 50%;
+  background-color: #223649;
+  /* background-image: linear-gradient(to right bottom,#F1F7F3,#B3B6C2); */
+  box-shadow: 1rem 1rem .5rem 0 rgba(0,0,0,0.75);
+  border-radius: 1rem;
+  }
+
+.inputForm {
+  display: block;
+  width: 50%;
+  padding: 1.5rem 2rem;
+  background-color: #B3B6C2;
+  /* background-color: rgba(34,54,73,0.8); */
+  border-radius: 1rem;
+  margin: 2rem auto 2rem auto;
+  color: black;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.buttonForm {
+  font-family: 'Squada One', cursive;
+  font-size: 1.5rem;
+  letter-spacing: 1.1px;
+  display: block;
+  width: 25%;
+  margin: 4rem auto 2rem auto;
+  padding: 1.5rem 1.5rem;
+  border-radius: 1rem;
+  border-style: none;
+  background-image: linear-gradient(to right bottom,#F1F7F3,#DF7A53);
+  text-transform: uppercase; 
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.buttonForm:hover {
+transform: translateY(-.3rem);
+box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+
+.buttonForm :hover ::after {
+transform: scaleX(1.4) scaleY(1.6);
+opacity: 0; 
+}
+
+.buttonForm :active :focus{
+  transform: translateY(-.1rem);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+  outline: none;  
+}
+
+.answer {
+  font-size: 3rem;
+  font-family: 'Squada One', cursive;
+  color: #DF7A53;
+  text-align: center;
+  padding-top: 2rem;
+}
